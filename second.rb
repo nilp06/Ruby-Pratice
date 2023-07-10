@@ -28,3 +28,32 @@
 # 	end
 #   answer
 # end
+# Given a string, reverse all the words which have odd length. The even length words are not changed.
+# Examples
+
+# reverse_odd("Bananas") ➞ "sananaB"
+
+# reverse_odd("One two three four") ➞ "enO owt eerht four"
+
+# reverse_odd("Make sure uoy only esrever sdrow of ddo length")
+# ➞ "Make sure you only reverse words of odd length"
+
+# Notes
+
+# There is exactly one space between each word and no punctuation is used.
+
+# def reverse_odd(str)
+#   str.split(" ").map{|x| x.length % 2 == 1 ? x.reverse : x }.join(' ')
+# end
+
+# Two sisters are eating chocolate, whose pieces are represented as subarrays of [l x w].
+
+# Write a function that returns true if the total area of chocolate is the same for each sister.
+
+# To illustrate:
+
+# total1 = 0
+# total2 = 0
+# agatha.each { |x| total1 += x[0] * x[1] }
+# bertha.each { |x| total2 += x[0] * x[1] }
+# total1 == total2
